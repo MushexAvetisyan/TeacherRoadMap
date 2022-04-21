@@ -51,11 +51,13 @@ export default new Vuex.Store({
       },
       {
         Title: "Basic Examples",
-        Description: "<p>In this chapter we will show some basic HTML examples.</p>",
+        Description: "<p>All HTML documents must start with a document type declaration: '<'!DOCTYPE html>.</p>" +
+          "<p>The HTML document itself begins with '<'html'>' and ends with '<'/html>.</p>" +
+          "The visible part of the HTML document is between <span style='color: red'>'<'body> and '<'/body>.</span>"
       },
       {
         Title: "Elements",
-        Description: "<p>An HTML element is defined by a start tag, some content, and an end tag.</p>",
+        Description: "<p>An HTML element is defined by a start tag, some content, and an end tag.</p>"
       },
       {
         Title: "Attributes",

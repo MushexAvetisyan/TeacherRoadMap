@@ -16,10 +16,36 @@ const routes = [
     component: () => import('../views/CSS.vue')
   },
   {
+    path: '/Bootstrap',
+    name: 'Bootstrap',
+    component: () => import('../views/Bootstrap.vue')
+  },
+  {
+    path: '/JQuery',
+    name: 'JQuery',
+    component: () => import('../views/JQuery.vue')
+  },
+  {
     path: '/JAVASCRIPT',
     name: 'JAVASCRIPT',
     component: () => import('../views/JAVASCRIPT.vue')
-  }
+  },
+  {
+    path: '/PHP',
+    name: 'PHP',
+    component: () => import('../views/PHP.vue')
+  },
+  {
+    path: '/VueJs',
+    name: 'VueJs',
+    component: () => import('../views/VueJs.vue')
+  },
+  {
+    path: '/Git',
+    name: 'Git',
+    component: () => import('../views/Git.vue')
+  },
+
 ]
 
 const router = new VueRouter({

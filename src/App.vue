@@ -4,7 +4,13 @@
       <ul>
         <li><router-link to="/">HTML</router-link></li>
         <li><router-link to="/CSS">CSS</router-link></li>
+        <li><router-link to="/Bootstrap">Bootstrap</router-link></li>
+        <li><router-link to="/JQuery">JQuery</router-link></li>
         <li><router-link to="/JavaScript">JavaScript</router-link></li>
+        <li><router-link to="/PHP">PHP</router-link></li>
+        <li><router-link to="/VueJs">Vue js</router-link></li>
+        <li><router-link to="/Git">Git</router-link></li>
+
       </ul>
     </div>
     <router-view/>

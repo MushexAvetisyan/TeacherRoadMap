@@ -1,8 +1,6 @@
 <template>
   <v-app>
     <v-content>
-
-
       <v-card>
         <v-toolbar
             flat
@@ -33,7 +31,6 @@
           </v-tab-item>
         </v-tabs>
       </v-card>
-
 
       <v-card>
         <v-toolbar
@@ -92,6 +89,13 @@ export default {
 #hello:hover{
   background-color: black;
   color: white;
+}
+#hello{
+  font-weight: bold;
+  font-size: 20px;
+}
+#hello >>> .v-tab--active{
+  background-color: red;
 }
 .Content_html{
   background-color: #0E5183;
