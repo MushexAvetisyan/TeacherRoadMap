@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <ul>
+        <li><router-link to="/">HTML</router-link></li>
+        <li><router-link to="/CSS">CSS</router-link></li>
+        <li><router-link to="/JavaScript">JavaScript</router-link></li>
+      </ul>
     </div>
     <router-view/>
   </div>
@@ -14,7 +17,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+  background-color: #0c2461;
 }
 
 #nav {
@@ -22,10 +26,21 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: white;
+    text-decoration-line: none;
+    font-size: 25px;
 
     &.router-link-exact-active {
       color: #42b983;
+    }
+  }
+  ul{
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    li{
+      margin: 0 50px;
     }
   }
 }
