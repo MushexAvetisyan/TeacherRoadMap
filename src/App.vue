@@ -23,6 +23,12 @@
 
 #nav {
   padding: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  background-color: #0C2461;
 
   a {
     font-weight: bold;
