@@ -65,22 +65,19 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
+
   data: () => ({
   }),
   computed: {
-    Basic() {
-      return this.$store.getters.HTMLBasicTabsName
-    },
-    Forms() {
-      return this.$store.getters.HTMLFormsTabsName
-    },
-    BasicContent() {
-      return this.$store.getters.HTMLBasicContent
-    },
-    FormsContent() {
-      return this.$store.getters.HTMLFormsContent
-    }
+    ...mapGetters({
+      Basic: 'HTMLBasicTabsName',
+      Forms: 'HTMLFormsTabsName',
+      BasicContent: 'HTMLBasicContent',
+      FormsContent: 'HTMLFormsContent',
+    }),
   }
 }
 </script>
@@ -98,16 +95,20 @@ export default {
   background-color: red;
 }
 .Content_html{
-  background-color: #0E5183;
-  width: 60%;
+  background-color: black;
   display: flex;
   justify-content: center;
-  margin-left: 320px;
   margin-top: 15px;
   padding: 25px;
   p{
     color: white;
     font-size: 20px;
+    font-weight: bold;
+  }
+}
+::v-deep {
+  .v-tabs-bar__content {
+    align-items: flex-start;
   }
 }
 </style>
