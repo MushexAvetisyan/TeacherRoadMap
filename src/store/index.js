@@ -8,6 +8,32 @@ export default new Vuex.Store({
 
     // HTML----------------------------------------------------------------------------------------------
 
+    BasicContentNav: [
+      {
+        Title: "1.BASIC",
+        router: '/Basic',
+        id: 1
+      },
+      {
+        Title: "2.FORMS"
+      },
+      {
+        Title: "3.GRAPHICS"
+      },
+      {
+        Title: "4.MEDIA"
+      },
+      {
+        Title: "5.APIs"
+      },
+      {
+        Title: "6.EXAMPLES"
+      },
+      {
+        Title: "7.REFERENCES"
+      },
+    ],
+
     BasicContentTabs: [
       {
         Title: "1.What is HTTP"
@@ -186,11 +212,14 @@ export default new Vuex.Store({
   },
 
   getters: {
-    HTMLBasicContent: (state) => state.BasicContent,
-    HTMLFormsContent: (state) => state.FormsContent,
+    HTMLBasicNavName: (state) => state.BasicContentNav,
 
     HTMLBasicTabsName: (state) => state.BasicContentTabs,
     HTMLFormsTabsName: (state) => state.FormsContentTabs,
+
+    HTMLBasicContent: (state) => state.BasicContent,
+    HTMLFormsContent: (state) => state.FormsContent,
+
 
     JavaScriptBasicTabsName: (state) => state.JavaScriptBasicContentTabs,
     JavaScriptBasicContent: (state) => state.JavaScriptContent,

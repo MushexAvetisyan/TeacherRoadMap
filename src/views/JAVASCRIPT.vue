@@ -1,38 +1,4 @@
 <template>
-  <v-app>
-    <v-content>
-      <v-card>
-        <v-toolbar
-            flat
-            color="black"
-            dark
-        >
-          <v-toolbar-title class="flex">
-            <h1>
-              Introduction
-            </h1>
-          </v-toolbar-title>
-        </v-toolbar>
-        <v-tabs vertical>
-          <div v-for="(item, index) in JavaScriptBasicTabs" :key="index">
-            <v-tab id="hello">
-              {{item.Title}}
-            </v-tab>
-          </div>
-          <v-tab-item v-for="(item, index) in BasicContent" :key="index">
-            <v-card flat>
-              <v-card-text>
-                <h1 style="color: black; font-size: 35px;">{{item.Title}}</h1>
-                <div class="Content_js">
-                  <p v-html="item.Description"></p>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-        </v-tabs>
-      </v-card>
-    </v-content>
-  </v-app>
 </template>
 
 <script>
